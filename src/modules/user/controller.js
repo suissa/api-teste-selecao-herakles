@@ -62,17 +62,5 @@ module.exports = {
 		    	});
 		    }
 		);
-	},
-	update:function(req, res) {
-
-	},
-	delete:function(req, res) {
-
-	},
-	byId:function(req, res) {
-
-	},
-	search:function(req, res) {
-
 	}
 };

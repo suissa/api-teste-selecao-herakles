@@ -2,6 +2,7 @@ var app = require('express')();
 var bodyParser = require('body-parser');
 var helmet = require('helmet');
 
+/**SET PORT**/
 app.set('port', (process.env.PORT || 3000));
 
 /**HELMET**/
@@ -27,6 +28,7 @@ app.use('/public',require('./src/routes/public'));
 /**ROUTES API**/
 app.use('/api',require('./src/routes/api'));
 
+/**INIT SERVER**/
 app.listen(app.get('port'),function(){
 	console.log('Servidor Rodando! Porta: ' + app.get('port'));
 });

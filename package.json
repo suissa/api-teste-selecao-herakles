@@ -1,0 +1,30 @@
+{
+  "name": "api-teste-selecao-herakles",
+  "version": "1.0.0",
+  "description": "Aplicação de seleção Herakles",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lffranca/api-teste-selecao-herakles.git"
+  },
+  "author": "Lucas França <lucas.franca@edu.unifor.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lffranca/api-teste-selecao-herakles/issues"
+  },
+  "homepage": "https://github.com/lffranca/api-teste-selecao-herakles#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "helmet": "^2.2.0",
+    "jsonwebtoken": "^7.1.9",
+    "pg": "^6.1.0",
+    "pg-hstore": "^2.3.2",
+    "q": "^1.4.1",
+    "sequelize": "^3.24.3"
+  }
+}

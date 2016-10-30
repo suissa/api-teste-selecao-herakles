@@ -9,28 +9,16 @@ router.use(function(req, res, next) {
 // Filtrando Parametros
 router.param('id', Ctrl.paramId);
 // Index
-router.get('/', function(req, res) {
-	Ctrl.index(req,res);
-});
+router.get('/', Ctrl.index);
 // Create
-router.post('/', function(req, res) {
-	Ctrl.create(req,res);
-});
+router.post('/', Ctrl.create);
 // Update
-router.put('/:id', function(req, res) {
-	Ctrl.update(req,res);
-});
+// router.put('/:id', Ctrl.update);
 // Delete
-router.delete('/:id', function(req, res) {
-	Ctrl.delete(req,res);
-});
+// router.delete('/:id', Ctrl.delete);
 // By ID
-router.get('/:id', function(req, res) {
-	Ctrl.byId(req,res);
-});
+// router.get('/:id', Ctrl.byId);
 // Search
-router.get('/search/:search', function(req, res) {
-	Ctrl.search(req,res);
-});
+// router.get('/search/:search', Ctrl.search);
 
 module.exports = router;
